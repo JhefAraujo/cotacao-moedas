@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câmbio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="campo">
+            <div class="wrapper" id="moedas">
+                <div onclick="cleanAndFetch(this)" class="input">Dólar - USD</div>
+                <div onclick="cleanAndFetch(this)" class="input">Euro - EUR</div>
+                <div onclick="cleanAndFetch(this)" class="input">Libra - GBP</div>
+                <div onclick="cleanAndFetch(this)" class="input">Iene - JPY</div>
+            </div>
+            <div class="wrapper" id="dados" style="display: none;">
+                <h2 id="moeda"></h2>
+                <h1 id="valor"></h1>
+                <div onclick="voltar()" class="confirmar">Voltar</div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 550px) {
+    main {
+        width: 90vw !important;
+        height: 90vh !important;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .campo {
+        width: 85% !important;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 85vh;
+    border-radius: 40px;
+    width: 70vh;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22),  0px 2px 0px 1px rgb(32, 38, 57);
+    background: linear-gradient(to top, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 74%;
+    height: 80%;
+    row-gap: 15px;
+    background-color: white;
+    background: linear-gradient(to bottom, #fbfcfd 0%, #ebedee 100%);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+}
+
+.confirmar {
+    padding: 15px;
+    background: linear-gradient(to top, #13547a 0%, #80d0c7 100%);
+    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    position: absolute;
+    width: 70%;
+    text-align: center;
+    font-weight: bold;
+    bottom: 4%;
+}
+
+.input {
+    all: unset;
+    text-align: center;
+    font-size: 1.1em;
+    width: 70%;
+    padding: 17px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.1) 0px 18px 36px -18px inset;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+}
+
+.input:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px -30px 60px -12px inset, rgba(0, 0, 0, 0.1) 0px -18px 36px -18px inset, rgba(149, 157, 165, 0.3) 0px 8px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    transition: all 0.4s;
+    transition-delay: 0.4s;
+}
+
+#dados {
+    animation: appear 0.4s;
+    transition: all 0.4s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
